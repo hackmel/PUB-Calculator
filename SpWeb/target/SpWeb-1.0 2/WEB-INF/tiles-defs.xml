@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/tiles/menu.jsp"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/body.jsp"/>
+      <put-attribute name="footer"   value="/WEB-INF/tiles/footer.jsp"/>
+  </definition>
+  
+  
+  <definition name="index" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/index.jsp"/>      
+  </definition>
+  
+  <definition name="addBillForm" extends="baseLayout">
+      <put-attribute name="title"  value="Add Bill"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/addBillForm.jsp" />      
+  </definition>
+  
+  <definition name="addBillCharges" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/addBillCharges.jsp"/>      
+  </definition>
+  
+  <definition name="viewBills" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/viewBills.jsp"/>      
+  </definition>
+  
+  <definition name="addChargesForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/addChargesForm.jsp"/>      
+  </definition>
+  
+   <definition name="addTenantBillForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/addTenantBillForm.jsp"/>      
+  </definition>
+  
+  <definition name="addTenantForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/addTenantForm.jsp"/>      
+  </definition>
+  
+   <definition name="editBillForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/editBillForm.jsp"/>      
+  </definition>
+  
+  
+  <definition name="editChargesForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/editChargesForm.jsp"/>      
+  </definition>
+  
+  <definition name="editTenantForm" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/editTenantForm.jsp"/>      
+  </definition>
+  
+  
+   <definition name="monthlyCharges" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/monthlyCharges.jsp"/>      
+  </definition>
+  
+  <definition name="viewBillCharges" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/viewBillCharges.jsp"/>      
+  </definition>
+  
+  <definition name="viewCharges" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/viewCharges.jsp"/>      
+  </definition>
+  
+  <definition name="viewTenantCharges" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/viewTenantCharges.jsp"/>      
+  </definition>
+  
+  <definition name="viewTenants" extends="baseLayout">
+      <put-attribute name="title"  value=""/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/viewTenants.jsp"/>      
+  </definition>
+  
+</tiles-definitions>
