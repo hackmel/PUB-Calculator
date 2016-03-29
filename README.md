@@ -4,3 +4,9 @@ This web app generates a monthly report that indicates the amount we need to pay
 the apartment  including our vistors.
 This web app is coded in Java using Spring MVC to create RESTful services that will be consumed by javascrript using AJAX in the 
 front end. This also utilized the use of HTML5 and CSS3.
+
+There are 2 projects inside.
+1.) SPCore contains the model layer
+2.) SPWeb contains the View and Controller layer
+
+The project use maven to build and deploy the codes.
